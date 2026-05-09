@@ -35,6 +35,12 @@ describe('SteamAuthService', () => {
 
 		expect(url).toContain('https://steamcommunity.com/openid/login')
 		expect(url).toContain('openid.mode=checkid_setup')
+		expect(url).toContain(
+			'openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0'
+		)
+		expect(url).toContain(
+			'openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select'
+		)
 		expect(url).toContain('openid.return_to=')
 		expect(url).toContain('openid.realm')
 	})

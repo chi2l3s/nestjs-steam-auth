@@ -1,0 +1,51 @@
+{
+  "name": "nestjs-steam-auth",
+  "version": "1.0.0",
+  "description": "Modern Steam OpenID authentication for NestJS applications.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
+  },
+  "keywords": [
+    "nestjs",
+    "steam",
+    "steam-auth",
+    "steam-login",
+    "openid",
+    "authentication",
+    "typescript",
+    "nestjs-module"
+  ],
+  "author": "chi2l3s",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@lumina-cinema/core": "^1.0.3",
+    "@nestjs/testing": "^11.1.19",
+    "@types/express": "^5.0.6",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.6.2",
+    "jest": "^30.4.2",
+    "prettier": "^3.8.3",
+    "ts-jest": "^29.4.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.1.19",
+    "@nestjs/core": "^11.1.19",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  }
+}
